@@ -59,4 +59,12 @@ c) En caso de que el vSwitch no tenga DHCP, al momento de encender el VLM es nec
 
 ## 5- Configuración inicial
 
+a) Configurar la conectividad del VLM, definiendo la IP, máscara y GW
 
+b) Cambiar la contraseña por defecto.
+
+c) Agregar un usuario nuevo.
+
+# 6- Agregar un Virtual Service
+
+a) Agregar un Virtual Service y balancear el servidor Web (IIS)
