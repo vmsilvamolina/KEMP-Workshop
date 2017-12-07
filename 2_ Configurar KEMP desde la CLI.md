@@ -1,4 +1,8 @@
-# Agregar un Real Server a un Virtual Service
+# 
+
+##
+
+## Agregar un Real Server a un Virtual Service
 
 a) Ejecutamos **show** para ver todos los Virtual Services configurados en el KEMP.
 b) Para acceder al VS a editar debemos ejecutar **vip <IP del VS>**.
