@@ -65,6 +65,10 @@ b) Cambiar la contraseña por defecto.
 
 c) Agregar un usuario nuevo.
 
-# 6- Agregar un Virtual Service
+## 6- Agregar un Virtual Service
 
-a) Agregar un Virtual Service y balancear el servidor Web (IIS)
+a) Agregar un Virtual Service y definir como Real Server el servidor con IIS
+
+b) Definir en el archivo *hosts* una entrada que sea webserver y apunte a la IP del Virtual Service.
+
+c) Acceder desde un navegador a http://webserver
