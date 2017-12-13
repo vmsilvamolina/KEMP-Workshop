@@ -1,4 +1,4 @@
-# Configuración de un VLM
+# Configuración del VLM
 
 Para el primer laboratorio vamos a ver las buenas prácticas a la hora de configurar un VLM (Virtual LoadMaster). Antes de comenzar debemos de confirmar que contamos con todos los requisitos:
 
