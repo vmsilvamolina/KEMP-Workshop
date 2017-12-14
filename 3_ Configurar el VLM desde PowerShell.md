@@ -1,4 +1,4 @@
-# Configurar el VLM desde la PowerShell
+# Configurar el VLM desde PowerShell
 
 KEMP ofrece un módulo de administración para PowerShell. Para acceder a éste módulo es necesario acceder al siguiente enlace:
 

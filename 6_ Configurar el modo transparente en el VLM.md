@@ -1,0 +1,1 @@
+# Configurar el modo transparente en el VLM
