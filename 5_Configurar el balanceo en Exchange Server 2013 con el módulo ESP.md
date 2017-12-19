@@ -65,8 +65,19 @@ f) Ya definido el usuario, ingresamos la contraseña en el campo *Test User Pass
 a) Dentro de cada SubVS vamos a ubicarnos en la sección *ESP Options* para comenzar a definir las opciones de autenticación.
 b) En *Client Authentication Mode* seleccionar *Form Based*.
 c) Dentro del campo *SSO Domain* seleccionar de la lista el dominio que definimos anteriormente.
-d) Para el campo *Allowed Virtual Hosts*, se debe ingresar una exprepsión wildcard (*dominio) para el dominio en cuestión. Clic en *Set Allowed Virtual Hosts*.
-e) El siguiente valor a modificar es *Server Authentication Mode*, que se debe definir como *Basic Authentication*. 
+d) Para el campo *Allowed Virtual Hosts*, se debe ingresar la URL del servicio de Exchange (para el ejemplo vamos a usar *mailserver.lab.interno*) para el dominio en cuestión. Clic en *Set Allowed Virtual Hosts*.
+e) El siguiente valor a modificar es *Server Authentication Mode*, que se debe definir como *Basic Authentication*.
+
+### SubVS - OWA
+
+El OWA tiene una particularidad que se debe configurar de la siguiente manera:
+
+a) En el servidor de Exchange abrir la consola de PowerShell para Exchange
+b) Ejecutar el siguiente comando:
+
+    Get-Mailbox -Arbitration | where {$_.PersistedCapabilities -like “OrganizationCapabilityClientExtensions”} | fl exchangeGuid, primarySMTPAddress
+c) Copiar el valor de *ExchangeGuid*.
+d) Dentro de SubVS que corresponda al OWA, ingresar el valor anterior dentro del campo *Pre-Authorization Excluded Directories*.
 
 ### Configuración de los servidores de Exchange
 
